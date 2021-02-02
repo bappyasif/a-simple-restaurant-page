@@ -1,0 +1,30 @@
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-self: center; */
+    /* align-content: center; */
+    text-align: center;
+    flex-wrap: wrap;
+}
+.image-div {
+    margin: auto;
+    width: 470px;
+    height: 380px;
+    /* justify-content: center; */
+    /* align-self: center; */
+    /* align-content: center; */
+}
+img {
+    /* margin-left: 29%; */
+    width: 100%;
+    height: 100%;
+    /* justify-content: center; */
+    /* align-self: center;
+    align-content: center; */
+    /* margin: auto; */
+}
+p {
+    text-transform: capitalize;
+    text-align: justify;
+}
