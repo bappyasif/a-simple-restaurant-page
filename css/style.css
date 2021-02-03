@@ -1,9 +1,77 @@
 #content {
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+.image-div {
+    width: 470px;
+    height: 380px;
+    align-self: center;
+}
+.img {
+    width: 100%;
+    height: 100%;
+}
+p {
+    text-transform: capitalize;
+    text-align: justify;
+}
+.content-div {
+    display: flex;
+    flex-flow: column;
+}
+.flexed {
+    display: flex;
+    justify-content: space-evenly;
+}
+.bordered {
+    border: 1.1px solid dodgerblue;
+    border-radius: 29%;
+    width: 173px;
+}
+.boxed {
+    width: 146px;
+    border: 1.1px solid dodgerblue;
+}
+.tabbed {
+    background: rgb(195, 236, 236);
+    border: 1.1px dashed cyan;
+}
+.svgd {
+    height: 20px;
+    width: 17px;
+}
+.svgd:hover {
+    background-color: cornflowerblue;
+    border-radius: 38%;
+}
+.menufied {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    font-weight: bolder;   
+}
+.menufied:hover {
+    background-color: honeydew;
+    color: cornflowerblue;
+}
+.menufied:active {
+    background-color: cornflowerblue;
+    color: cornsilk;
+}
+.grow {
+    transition: all .2s ease-in-out;
+}
+.grow:hover {
+    transform: scale(1.1);
+}
+
+
+/*
+#content {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    /* align-self: center; */
-    /* align-content: center; */
     text-align: center;
     flex-wrap: wrap;
 }
@@ -11,20 +79,13 @@
     margin: auto;
     width: 470px;
     height: 380px;
-    /* justify-content: center; */
-    /* align-self: center; */
-    /* align-content: center; */
 }
 img {
-    /* margin-left: 29%; */
     width: 100%;
-    height: 100%;
-    /* justify-content: center; */
-    /* align-self: center;
-    align-content: center; */
-    /* margin: auto; */
+    height: 100%; 
 }
 p {
     text-transform: capitalize;
     text-align: justify;
-}
+} 
+ */
