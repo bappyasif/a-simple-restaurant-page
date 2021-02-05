@@ -9,8 +9,11 @@ function dropdownMenuLinkClicked(menuLink) {
     contentDiv.childNodes.forEach(item => item.textContent = "");
     switch(menuLink) {
         case "homePage":
-            initialPageLoad();
-            console.log(menuLink, initialPageLoad());
+            // initialPageLoad();
+            // document.querySelectorAll(".menu-active").forEach(item => item.classList.remove("menu-active"));
+
+            loadHomeTabContents();
+            // console.log(menuLink, initialPageLoad());
             // contentDiv.append(initialPageLoad());
             break;
         case "wwdPage":

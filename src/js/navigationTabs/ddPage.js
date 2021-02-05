@@ -4,10 +4,15 @@ function routingPages() {
 
     Array.from(document.querySelectorAll("a")).forEach(item=>{
         aTags.push(item.href.split("#")[1]);
-        item.addEventListener("click", () => {
+        item.addEventListener("click", (evt) => {
             // dropdownMenuLinkClicked(item.href.split("#")[1]);
+            evt.stopPropagation();
+            
+            document.querySelectorAll(".menu-active").forEach(item => item.classList.remove("menu-active"));
+            item.classList.add("menu-active");
+            
             return dropdownMenuLinkClicked(item.href.split("#")[1]);
-            console.log(item);
+            // console.log(item);
         });
     });
 
@@ -32,5 +37,21 @@ export {routingPages}
     hrefs.forEach(el => {
         
     })
+}
+
+
+function routingPages() {
+    let aTags = [];
+
+    Array.from(document.querySelectorAll("a")).forEach(item=>{
+        aTags.push(item.href.split("#")[1]);
+        item.addEventListener("click", () => {
+            // dropdownMenuLinkClicked(item.href.split("#")[1]);
+            return dropdownMenuLinkClicked(item.href.split("#")[1]);
+            console.log(item);
+        });
+    });
+
+    console.log(aTags);
 }
  */

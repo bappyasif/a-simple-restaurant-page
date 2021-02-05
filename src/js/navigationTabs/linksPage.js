@@ -21,10 +21,10 @@ function showMenuLinks() {
     hoverLink02.textContent = "What We Do Page";
     hoverLink02.classList.add("wwdPage");
     hoverLink02.href = "#wwdPage";
-    hoverLink02.addEventListener("click", () => {
-        console.log(loadWWDTabContents());
-        loadWWDTabContents();
-    });
+    // hoverLink02.addEventListener("click", () => {
+    //     console.log(loadWWDTabContents());
+    //     loadWWDTabContents();
+    // });
     
     hoverLink03.textContent = "Contact Page";
     hoverLink03.classList.add("contactPage");

@@ -118,6 +118,11 @@ p {
     left: -8rem;
     top: 1.2rem;
 } */
+.dropdown > .dropdown {
+    /* position: relative; */
+    /* left: -8rem; */
+    top: -1.5rem;
+}
 
 
 /*
