@@ -2,10 +2,15 @@
 console.log("restaurant page");
 import { initialPageLoad } from "./js/init.js";
 import {tabbedNavigation} from "./js/tabbedMenus.js";
+import {routingPages} from "./js/navigationTabs/ddPage.js";
+import {loadWWDTabContents} from "./js/tabbedPages/wwdTab.js";
 let contentElem = document.querySelector("#content");
 contentElem.appendChild(initialPageLoad());
 contentElem.insertAdjacentElement("beforebegin", tabbedNavigation());
 // console.log(tabbedNavigation().querySelector(".mPage"));
+routingPages();
+// let contentDiv =  document.querySelector(".content-div");
+// console.log(contentDiv);
 
 
 

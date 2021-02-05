@@ -74,6 +74,7 @@ p {
 .dropdown {
     position: relative;
     overflow: visible;
+    /* margin-top: 20px; */
     /* overflow-wrap: break-word; */
     /* display: inline-block; */
     /* float: left;
@@ -83,25 +84,40 @@ p {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 155px;
+    min-width: 128px;
     box-shadow: 2px 8px 16px 2px rgba(0,1,1,0.2);
     z-index: 1;
+    font-size: small;
 }
 /* .dropdown:hover .dropdown-content {display: block;} */
 .dropdown-content a {
-    color: aqua;
+    color: dodgerblue;
     padding: 13px 17px;
     text-decoration: none;
     display: block;
-    text-align: center;
+    /* text-align: center; */
+    text-align: left;
     float: none;
 }
 /* change color of dropdowns on hover */
-.dropdown-content a:hover {background-color: #dddddd;}
+/* .dropdown-content a:hover {background-color: #dddddd;} */
+.dropdown-content a:hover {
+    background-color: honeydew;
+    color: cyan;
+}
 /* show dropdown menu while on hover */
-.dropdown:hover .dropdown-content {display: block;}
-/* .dropdown:hover .dropdown-content {display: inline-block;} */
+/* .dropdown:hover .dropdown-content {display: block;} */
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+    margin-top: 47px;
+}
 
+/* rule for .dropdown element that is a direct child of another .dropdown element */
+/* .dropdown > .dropdown {
+    position: relative;
+    left: -8rem;
+    top: 1.2rem;
+} */
 
 
 /*
